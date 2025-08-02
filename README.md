@@ -32,15 +32,15 @@ The data structure includes:
 - **Card Information:** including card brand (Visa, Mastercard), type (credit, debit, prepaid), issuing country, and BIN-related data.
 
 - **User and Device Features:**
-* count_orders: number of previous successful orders by the user.
-* count_emails: number of unique emails used by the user.
-* device_type, payment_method: e.g., Apple Pay, Google Pay, Card.
-* ip_country and card_country for geographic comparison.
+  * count_orders: number of previous successful orders by the user.
+  * count_emails: number of unique emails used by the user.
+  * device_type, payment_method: e.g., Apple Pay, Google Pay, Card.
+  * ip_country and card_country for geographic comparison.
 
 - **Binary Flags and Derived Variables:**
-* Mismatch between IP country and card country.
-* Retry attempt count.
-* Proxy for user experience via invoice number (higher number = later stage).
+  * Mismatch between IP country and card country.
+  * Retry attempt count.
+  * Proxy for user experience via invoice number (higher number = later stage).
 
 The target variable is transaction success (binary), which determines whether the payment went through successfully.
 
